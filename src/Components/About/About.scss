@@ -1,4 +1,10 @@
-#cristipic {
-  width: 50vw;
-  outline: 2px solid red;
+.about-section {
+  img {
+    width: 50vw;
+    z-index: -1;
+    @media (max-width: 500px) {
+      width: 100%;
+      position: absolute;
+    }
+  }
 }

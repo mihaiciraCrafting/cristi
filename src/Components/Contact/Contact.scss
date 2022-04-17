@@ -1,0 +1,48 @@
+.contact-container {
+  padding-bottom: 200px;
+  .socialMedia {
+    a {
+      color: white;
+
+      font-size: 80px;
+
+      transition: 500ms;
+      -o-transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+  .directContact {
+    div {
+      text-align: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 500ms;
+        -o-transition: 500ms;
+        -webkit-transition: 500ms;
+        -moz-transition: 500ms;
+        &:hover {
+          color: red;
+        }
+      }
+
+      & > *:nth-child(1) {
+        border: 2px solid white;
+        border-radius: 100%;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 40px;
+      }
+    }
+  }
+}

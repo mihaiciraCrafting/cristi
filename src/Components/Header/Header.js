@@ -8,7 +8,6 @@ export default function Header() {
 
   useEffect(() => {
     video.current.play();
-    console.log(video.current);
   }, []);
   return (
     <div id="header">

@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.scss';
 import { Stack, Typography } from '@mui/material';
+import CristiBigPic from '../../Assets/img/cristi_bigPic.png';
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
       alignItems="center"
       justifyContent="space-evenly"
       direction="row"
-      sx={{ border: '2px solid green' }}
+      className="about-section"
     >
       <Stack
         alignItems="center"
@@ -17,8 +18,8 @@ export default function About() {
         sx={{ maxWidth: '400px', textAlign: 'left' }}
         gap="30px"
       >
-        <Typography variant="h4">Despre mine</Typography>
-        <Typography variant="p" sx={{ fontSize: '17px' }}>
+        <Typography variant="h2">Despre mine</Typography>
+        <Typography variant="p" sx={{ fontSize: '20px' }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -31,7 +32,7 @@ export default function About() {
         </Typography>
       </Stack>
 
-      <h2 id="cristipic">POZAAAA</h2>
+      <img src={CristiBigPic} />
     </Stack>
   );
 }
