@@ -14,11 +14,16 @@ export default function About() {
 
   const scrollEvent = () => {
     const Y = window.scrollY;
-    // console.log(Y);
-    let value = Y / 80;
+    if (window.innerWidth < 700) {
+      let value = Y / 30;
 
-    img.current.style.transform = `translateX(-${value}%)`;
-    text.current.style.transform = `translateX(${value}%)`;
+      img.current.style.transform = `translateY(${value}%)`;
+    } else {
+      let value = Y / 80;
+
+      img.current.style.transform = `translateX(-${value}%)`;
+      text.current.style.transform = `translateX(${value}%)`;
+    }
   };
 
   return (
@@ -39,7 +44,6 @@ export default function About() {
       >
         <Typography
           variant="h2"
-          id="lol"
           sx={{ fontFamily: "'Jacques Francois', serif" }}
         >
           Despre mine

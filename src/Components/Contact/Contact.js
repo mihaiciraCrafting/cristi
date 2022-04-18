@@ -21,7 +21,14 @@ export default function Contact() {
       gap="50px"
       className="contact-container"
     >
-      <Typography variant="h1" sx={{ fontSize: '75px', fontWeight: 'bold' }}>
+      <Typography
+        variant="h1"
+        sx={{
+          fontSize: '75px',
+          fontWeight: 'bold',
+          fontFamily: "'Jacques Francois', serif",
+        }}
+      >
         Contact
       </Typography>
 
@@ -54,6 +61,7 @@ export default function Contact() {
         gap="30px"
         direction="row"
         className="directContact"
+        flexWrap="wrap"
       >
         <Stack alignItems="center" justifyContent="center" gap="10px">
           <FontAwesomeIcon icon={faPhone} />

@@ -16,7 +16,14 @@ export default function Portfolio() {
       sx={{ marginTop: '100px' }}
       gap="50px"
     >
-      <Typography variant="h1" sx={{ fontSize: '75px', fontWeight: 'bold' }}>
+      <Typography
+        variant="h1"
+        sx={{
+          fontSize: '75px',
+          fontWeight: 'bold',
+          fontFamily: "'Jacques Francois', serif",
+        }}
+      >
         Portofoliu
       </Typography>
 
