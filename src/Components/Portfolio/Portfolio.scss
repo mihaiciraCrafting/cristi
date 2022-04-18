@@ -12,10 +12,13 @@
   }
   img {
     width: 400px;
+    height: 400px;
+
     transition: 500ms;
     -o-transition: 500ms;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
+
     filter: grayscale(1);
     transform: scale(1.1);
 

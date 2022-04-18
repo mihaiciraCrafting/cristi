@@ -1,0 +1,63 @@
+@import '../../variables';
+.overlay {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bgcolor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform-origin: top;
+
+  transition: 500ms;
+  -o-transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+
+  #logo-tr-1 {
+    opacity: 0;
+    animation: 1s logoGrow 200ms linear forwards;
+  }
+
+  #logo-tr-2 {
+    opacity: 0;
+    animation: 1s logoGrow 400ms linear forwards;
+  }
+
+  #logo-tr-3 {
+    opacity: 0;
+    animation: 1s logoGrow 600ms linear forwards;
+  }
+
+  #logo-tr-4 {
+    opacity: 0;
+    animation: 1s logoGrow 800ms linear forwards;
+  }
+
+  #logo-tr-5 {
+    opacity: 0;
+    animation: 1s logoGrow 1000ms linear forwards;
+  }
+
+  #logo-tr-6 {
+    opacity: 0;
+    animation: 1s logoGrow 1200ms linear forwards;
+  }
+
+  #text {
+    opacity: 0;
+    animation: 1s logoGrow 1500ms linear forwards;
+  }
+}
+
+@keyframes logoGrow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

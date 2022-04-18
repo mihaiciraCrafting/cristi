@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './About.scss';
 import { Stack, Typography } from '@mui/material';
 import CristiBigPic from '../../Assets/img/cristi_bigPic.png';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function About() {
+  const img = useRef();
+  const text = useRef();
+
+  useEffect(() => {
+    document.addEventListener('scroll', scrollEvent);
+  });
+
+  const scrollEvent = () => {
+    const Y = window.scrollY;
+    // console.log(Y);
+    let value = Y / 80;
+
+    img.current.style.transform = `translateX(-${value}%)`;
+    text.current.style.transform = `translateX(${value}%)`;
+  };
+
   return (
     <Stack
       alignItems="center"
@@ -17,8 +34,16 @@ export default function About() {
         direction="column"
         sx={{ maxWidth: '400px', textAlign: 'left' }}
         gap="30px"
+        className="aboutMeText"
+        ref={text}
       >
-        <Typography variant="h2">Despre mine</Typography>
+        <Typography
+          variant="h2"
+          id="lol"
+          sx={{ fontFamily: "'Jacques Francois', serif" }}
+        >
+          Despre mine
+        </Typography>
         <Typography variant="p" sx={{ fontSize: '20px' }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -32,7 +57,7 @@ export default function About() {
         </Typography>
       </Stack>
 
-      <img src={CristiBigPic} />
+      <img src={CristiBigPic} ref={img} />
     </Stack>
   );
 }

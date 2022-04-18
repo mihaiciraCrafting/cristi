@@ -1,7 +1,11 @@
 import React from 'react';
 import './Portfolio.scss';
 import { Stack, Typography } from '@mui/material';
-import Portrait from '../../Assets/img/portfolio_portrait.png';
+import Portrait from '../../Assets/img/portrait.png';
+import Nature from '../../Assets/img/nature.png';
+import Eveniment from '../../Assets/img/eveniment.png';
+import Street from '../../Assets/img/street.png';
+import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
   return (
@@ -24,27 +28,27 @@ export default function Portfolio() {
         className="portfolio-container"
       >
         <div>
-          <a href="">
+          <Link to="/portrait">
             <img src={Portrait} />
-          </a>
+          </Link>
         </div>
 
         <div>
-          <a href="">
-            <img src={Portrait} />
-          </a>
+          <Link to="/nature">
+            <img src={Nature} />
+          </Link>
         </div>
 
         <div>
-          <a href="">
-            <img src={Portrait} />
-          </a>
+          <Link to="/eveniment">
+            <img src={Eveniment} />
+          </Link>
         </div>
 
         <div>
-          <a href="">
-            <img src={Portrait} />
-          </a>
+          <Link to="/street">
+            <img src={Street} />
+          </Link>
         </div>
       </Stack>
     </Stack>

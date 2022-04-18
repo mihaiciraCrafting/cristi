@@ -62,8 +62,8 @@ export default function Contact() {
 
         <Stack alignItems="center" justifyContent="center" gap="10px">
           <FontAwesomeIcon icon={faEnvelope} />
-          <a href="mailto:ChristianPhotograper@gmail.com">
-            ChristianPhotograper@gmail.com
+          <a href="mailto:ChristianPhotographer@gmail.com">
+            ChristianPhotographer@gmail.com
           </a>
         </Stack>
       </Stack>
