@@ -1,9 +1,17 @@
 .about-section {
   height: max-content;
   position: relative;
+
   @media (max-width: 700px) {
     min-height: 700px;
+    gap: 16rem;
   }
+
+  iframe {
+    width: 90vw;
+    height: 80vh;
+  }
+
   img {
     width: 40vw;
     z-index: -1;

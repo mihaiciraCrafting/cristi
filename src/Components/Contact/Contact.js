@@ -9,6 +9,7 @@ import {
   faFacebook,
   faTwitter,
   faGithub,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
@@ -51,7 +52,7 @@ export default function Contact() {
           <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href="" target="_blank">
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </Stack>
 
@@ -60,6 +61,7 @@ export default function Contact() {
         justifyContent="center"
         gap="30px"
         direction="row"
+        sx={{ padding: '0 2rem 0 2rem' }}
         className="directContact"
         flexWrap="wrap"
       >
