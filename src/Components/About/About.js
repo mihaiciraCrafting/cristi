@@ -3,6 +3,7 @@ import './About.scss';
 import { Stack, Typography } from '@mui/material';
 import CristiBigPic from '../../Assets/img/cristi_bigPic.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Video from '../../Assets/video/headerVideo.mp4';
 
 export default function About() {
   const img = useRef();
@@ -25,6 +26,13 @@ export default function About() {
       text.current.style.transform = `translateX(${value}%)`;
     }
   };
+
+  useEffect(
+    () => () => {
+      document.removeEventListener('scroll', scrollEvent);
+    },
+    []
+  );
 
   return (
     <Stack
@@ -64,7 +72,7 @@ export default function About() {
 
         <img src={CristiBigPic} ref={img} />
       </Stack>
-      <iframe
+      {/* <iframe
         // width="560"
         // height="315"
         src="https://www.youtube.com/embed/UJRuSQaOFh4"
@@ -72,7 +80,11 @@ export default function About() {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></iframe> */}
+      <video loop muted controls>
+        <source src={Video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </Stack>
   );
 }

@@ -1,7 +1,10 @@
 .portfolio-container {
-  width: 80vw;
+  width: 850px;
   gap: 0;
   padding-bottom: 100px;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 
   a,
   div {

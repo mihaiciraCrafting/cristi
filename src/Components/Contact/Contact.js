@@ -48,6 +48,7 @@ export default function Contact() {
         <a href="" target="_blank">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
+
         <a href="" target="_blank">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
